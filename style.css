@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fefcfb;
+    color: #1e1e2a;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* ------------------------------
+   GRADIENT TEXT & BUTTONS
+------------------------------- */
+.gradient-text {
+    background: linear-gradient(135deg, #8B5CF6, #D946EF, #F97316);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.btn-custom {
+    background: linear-gradient(95deg, #8B5CF6, #D946EF);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 18px rgba(139, 92, 246, 0.25);
+}
+
+.btn-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 28px rgba(139, 92, 246, 0.35);
+    background: linear-gradient(95deg, #9b6eff, #e85dff);
+}
+
+.btn-outline-custom {
+    border: 2px solid #8B5CF6;
+    color: #8B5CF6;
+    background: transparent;
+    border-radius: 40px;
+    padding: 10px 28px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline-custom:hover {
+    background: #8B5CF6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ------------------------------
+   NAVBAR & SCROLL EFFECT
+------------------------------- */
+.navbar {
+    transition: all 0.4s ease;
+    padding: 18px 0;
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(120deg, #8B5CF6, #D946EF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.navbar-brand:hover{
+
+    background: linear-gradient(120deg, #8B5CF6, #D946EF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #1e1e2a !important;
+    margin: 0 12px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #8B5CF6 !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #8B5CF6, #D946EF);
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width:20%;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    background: radial-gradient(circle at 10% 30%, rgba(139, 92, 246, 0.03) 0%, rgba(217, 70, 239, 0.02) 100%);
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(139, 92, 246, 0.12);
+    backdrop-filter: blur(4px);
+    padding: 6px 18px;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #8B5CF6;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    background: linear-gradient(145deg, #fff, #f5f0ff);
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.2);
+    border: 4px solid white;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.profile-icon img:hover {
+    transform: scale(1.03);
+}
+
+/* ------------------------------
+   SKILLS SECTION (Progress Bars)
+------------------------------- */
+.skill-item {
+    margin-bottom: 1.4rem;
+}
+
+.skill-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 12px;
+    background-color: #e9e3ff;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #8B5CF6, #D946EF);
+    border-radius: 12px;
+}
+
+/* ------------------------------
+   PROJECT CARDS
+------------------------------- */
+.project-card {
+    background: white;
+    border-radius: 28px;
+    transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    border: none;
+    box-shadow: 0 12px 26px -12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 28px 38px -14px rgba(139, 92, 246, 0.2);
+}
+
+.card-icon {
+    font-size: 2.8rem;
+    color: #8B5CF6;
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------
+   SOCIAL ICONS
+------------------------------- */
+.social-icon {
+    background: #f0eefc;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    color: #4a3b7c;
+    font-size: 1.3rem;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: #8B5CF6;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------- */
+footer {
+    background: #0f0c1c;
+    color: #cdc9f0;
+}
+
+.footer-links a {
+    color: #cdc9f0;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #D946EF;
+}
+
+/* ------------------------------
+   SECTION & TITLE STYLES
+------------------------------- */
+section {
+    scroll-margin-top: 85px;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------
+   RESPONSIVE ADJUSTMENTS
+------------------------------- */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .profile-icon {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* ------------------------------
+   MODAL & CUSTOM COMPONENTS
+------------------------------- */
+.modal-demo .modal-content {
+    border-radius: 28px;
+    border: none;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.weather-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+/* ------------------------------
+   PROFESSIONAL NOTIFICATION MODAL
+------------------------------- */
+.notification-modal .modal-content {
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.notification-modal .modal-header {
+    border-bottom: none;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.notification-modal .modal-body {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.notification-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.notification-icon.success {
+    color: #10b981;
+}
+
+.notification-icon.error {
+    color: #ef4444;
+}
+
+.notification-icon.warning {
+    color: #f59e0b;
+}

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Professional portfolio of Labonno Roy - Creative Developer & UI Enthusiast">
+    <title>Labonno Roy Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS + Icons + Fonts + Chart.js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#">Labonno Roy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <div class="col-lg-7 order-lg-1 order-2">
+                <span class="hero-badge"><i class="fas fa-code me-1"></i> Crafting digital magic</span>
+                <h1 class="display-3 fw-bold mb-3">Hi, I'm <span class="gradient-text">Labonno Roy</span></h1>
+                <h3 class="mb-3">A passionate <span id="dynamic-role" class="gradient-text">Creative Developer</span></h3>
+                <p class="lead mb-4 text-secondary">I turn ideas into elegant, interactive web experiences. 3+ years of crafting pixel-perfect, user-friendly digital products.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#contact" class="btn btn-custom"><i class="fas fa-paper-plane me-2"></i> Let's talk</a>
+                    <a href="#projects" class="btn btn-outline-custom"><i class="fas fa-eye me-2"></i> View Work</a>
+                </div>
+                <div class="mt-4 d-flex gap-3 flex-wrap">
+                    <a href="https://github.com/settings/profile" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/labonno-roy-1b1a81408/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://www.facebook.com/labonno.roy.170882/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-5 order-lg-2 order-1 text-center">
+                <div class="profile-icon mx-auto">
+                    <img src="/labonno.jpeg" alt="Labonno Roy Profile">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="bg-light rounded-4 p-4 shadow-sm">
+                    <i class="fas fa-quote-left fa-3x text-primary opacity-25 mb-3"></i>
+                    <p class="fs-5 fst-italic text-muted">"Design is not just what it looks like, it's how it works. I build products that are both beautiful and deeply functional."</p>
+                    <hr class="my-3 w-25" style="height:3px; background:linear-gradient(90deg,#8B5CF6,#D946EF);">
+                    <p class="mb-0 fw-semibold">— Labonno Roy</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="lead">Front-end architect & creative problem-solver based in Dinajpur, Bangladesh. I blend modern design systems with robust JavaScript to craft immersive digital experiences.</p>
+                <p class="text-muted">I graduated in Computer Science and have collaborated with startups and agencies to build responsive, high-performance websites.</p>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-2"><i class="fas fa-envelope fa-fw text-primary"></i><span>labonnoroy255@gmail.com</span></div>
+                        <div class="d-flex align-items-center gap-2 mt-3"><i class="fas fa-map-marker-alt fa-fw text-primary"></i><span>Dinajpur, Bangladesh</span></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-2"><i class="fas fa-award fa-fw text-primary"></i><span>Creative Problem Solver</span></div>
+                        <div class="d-flex align-items-center gap-2 mt-3"><i class="fas fa-laptop-code fa-fw text-primary"></i><span>Freelance Available</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light" style="background: #f9f8fe;">
+    <div class="container py-5">
+        <div class="text-center mb-5"><h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2><p class="lead text-muted">Tools & technologies I master</p></div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="skill-item"><div class="skill-title">HTML5 & CSS3 <span class="float-end">95%</span></div><div class="progress"><div class="progress-bar" style="width:95%"></div></div></div>
+                <div class="skill-item"><div class="skill-title">JavaScript <span class="float-end">70%</span></div><div class="progress"><div class="progress-bar" style="width:70%"></div></div></div>
+                <div class="skill-item"><div class="skill-title">React.js <span class="float-end">85%</span></div><div class="progress"><div class="progress-bar" style="width:85%"></div></div></div>
+                <div class="skill-item"><div class="skill-title">Bootstrap / Tailwind <span class="float-end">92%</span></div><div class="progress"><div class="progress-bar" style="width:92%"></div></div></div>
+            </div>
+            <div class="col-md-6">
+                <div class="skill-item"><div class="skill-title">UI/UX Design <span class="float-end">88%</span></div><div class="progress"><div class="progress-bar" style="width:88%"></div></div></div>
+                <div class="skill-item"><div class="skill-title">Git & Version Control <span class="float-end">90%</span></div><div class="progress"><div class="progress-bar" style="width:90%"></div></div></div>
+                <div class="skill-item"><div class="skill-title">Responsive Design <span class="float-end">94%</span></div><div class="progress"><div class="progress-bar" style="width:94%"></div></div></div>
+            </div>
+        </div>
+        <div class="row mt-5 text-center">
+            <div class="col-12 d-flex flex-wrap justify-content-center gap-3">
+                <span class="badge bg-white text-dark p-3 rounded-pill shadow-sm"><i class="fab fa-bootstrap me-1 text-primary"></i> Bootstrap 5</span>
+                <span class="badge bg-white text-dark p-3 rounded-pill shadow-sm"><i class="fab fa-js me-1 text-warning"></i> Vanilla JS</span>
+                <span class="badge bg-white text-dark p-3 rounded-pill shadow-sm"><i class="fab fa-react me-1 text-info"></i> React</span>
+                <span class="badge bg-white text-dark p-3 rounded-pill shadow-sm"><i class="fab fa-sass me-1 text-danger"></i> SCSS</span>
+                <span class="badge bg-white text-dark p-3 rounded-pill shadow-sm"><i class="fas fa-database me-1"></i> REST APIs</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section with Live Demos -->
+<section id="projects" class="py-5">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span> (Live Demos)</h2>
+            <p class="lead">Click on any card to open an interactive demo.</p>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card card h-100 p-4" data-bs-toggle="modal" data-bs-target="#insightModal">
+                    <div class="card-icon text-center"><i class="fas fa-chart-line"></i></div>
+                    <h4 class="fw-bold text-center">InsightFlow</h4>
+                    <p class="text-muted text-center">Analytics dashboard with Chart.js + real-time filter.</p>
+                    <div class="mt-auto text-center"><span class="badge bg-secondary bg-opacity-10 text-dark me-1">React-like</span><span class="badge bg-secondary bg-opacity-10 text-dark">Chart.js</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card card h-100 p-4" data-bs-toggle="modal" data-bs-target="#weatherModal">
+                    <div class="card-icon text-center"><i class="fas fa-cloud-sun"></i></div>
+                    <h4 class="fw-bold text-center">WeatherWise</h4>
+                    <p class="text-muted text-center">Live weather using OpenWeatherMap API (mock included).</p>
+                    <div class="mt-auto text-center"><span class="badge bg-secondary bg-opacity-10 text-dark me-1">JavaScript</span><span class="badge bg-secondary bg-opacity-10 text-dark">OpenWeather</span></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card card h-100 p-4" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <div class="card-icon text-center"><i class="fas fa-store"></i></div>
+                    <h4 class="fw-bold text-center">ModaCart</h4>
+                    <p class="text-muted text-center">E-commerce cart with LocalStorage persistence.</p>
+                    <div class="mt-auto text-center"><span class="badge bg-secondary bg-opacity-10 text-dark me-1">LocalStorage</span><span class="badge bg-secondary bg-opacity-10 text-dark">Bootstrap</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL 1: INSIGHTFLOW -->
+<div class="modal fade modal-demo" id="insightModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title"><i class="fas fa-chart-line me-2"></i>InsightFlow - Analytics Dashboard</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-label fw-bold">Filter by month:</label>
+                        <select class="form-select" id="monthFilter">
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="Mar" selected>March</option>
+                            <option value="Apr">April</option>
+                        </select>
+                        <button id="updateChartBtn" class="btn btn-custom w-100 mt-3">Update Data</button>
+                    </div>
+                    <div class="col-md-8"><canvas id="revenueChart" width="400" height="250" style="max-width:100%; height:auto;"></canvas></div>
+                </div>
+                <hr>
+                <div class="row mt-3">
+                    <div class="col-6 text-center"><h5>Total Views</h5><h3 id="totalViews">--</h3></div>
+                    <div class="col-6 text-center"><h5>Conversion</h5><h3 id="conversionRate">--%</h3></div>
+                </div>
+                <p class="text-muted mt-2"><small>📊 Dynamic chart filtering with synthetic data.</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 2: WEATHERWISE -->
+<div class="modal fade modal-demo" id="weatherModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header bg-gradient" style="background:linear-gradient(135deg,#1e3c72,#2a5298); color:white">
+                <h5 class="modal-title"><i class="fas fa-cloud-sun me-2"></i>WeatherWise - Live Weather</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="weather-card text-center">
+                    <h3 id="cityName">Dhaka</h3>
+                    <div class="display-1"><i id="weatherIcon" class="fas fa-cloud-sun"></i></div>
+                    <h2 id="temperature">-- °C</h2>
+                    <p id="description">Loading...</p>
+                    <input type="text" id="cityInput" class="form-control mt-3" placeholder="Enter city (e.g., London)" value="Dhaka">
+                    <button id="getWeatherBtn" class="btn btn-light mt-2 w-100 fw-bold">🔍 Get Weather</button>
+                    <div class="alert alert-info mt-3 small">💡 Using demo mock data. For real API, add OpenWeatherMap key.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 3: MODACART -->
+<div class="modal fade modal-demo" id="cartModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title"><i class="fas fa-shopping-cart me-2"></i>ModaCart - Interactive Store</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7"><h5>Products</h5><div id="productList" class="row g-3"></div></div>
+                    <div class="col-md-5"><div class="border rounded p-3 bg-light"><h5><i class="fas fa-cart-plus"></i> Your Cart <span id="cartCount">0</span></h5><div id="cartItemsContainer" style="max-height:250px; overflow-y:auto;"></div><hr><h6>Total: $<span id="cartTotal">0.00</span></h6><button id="clearCartBtn" class="btn btn-sm btn-outline-danger w-100 mt-2">Clear Cart</button></div></div>
+                </div>
+                <p class="small text-muted mt-3">✅ Cart data saved in LocalStorage — items persist after page reload.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5" style="background: linear-gradient(120deg, #faf6ff, #ffffff);">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <h2 class="section-title">Let’s <span class="gradient-text">Connect</span></h2>
+                <p class="lead">Got a project in mind? Or just want to say hi? I'd love to hear from you!</p>
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-3"><i class="fas fa-phone-alt text-primary me-3 fa-fw"></i> +880 1788019542</li>
+                    <li class="mb-3"><i class="fas fa-envelope text-primary me-3 fa-fw"></i> labonnoroy255@gmail.com</li>
+                    <li class="mb-3"><i class="fas fa-map-marker-alt text-primary me-3 fa-fw"></i> Dinajpur, Bangladesh</li>
+                </ul>
+                <div class="mt-4">
+                    <a href="#" class="social-icon me-2"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon me-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <form id="contactForm" class="bg-white p-4 p-xl-5 rounded-4 shadow-sm">
+                    <div class="row g-3">
+                        <div class="col-md-6"><label class="form-label fw-semibold">Your Name</label><input type="text" class="form-control" id="nameInput" placeholder="Labonno Roy" required></div>
+                        <div class="col-md-6"><label class="form-label fw-semibold">Email Address</label><input type="email" class="form-control" id="emailInput" placeholder="hello@example.com" required></div>
+                        <div class="col-12"><label class="form-label fw-semibold">Message</label><textarea class="form-control" rows="4" id="msgInput" placeholder="Tell me about your project..."></textarea></div>
+                        <div class="col-12"><button type="submit" class="btn btn-custom w-100"><i class="fas fa-paper-plane me-2"></i> Send Message</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5">
+    <div class="container text-center">
+        <div class="mb-3 footer-links">
+            <a href="#home">Home</a> <a href="#about">About</a> <a href="#skills">Skills</a> <a href="#projects">Projects</a> <a href="#contact">Contact</a>
+        </div>
+        <div class="mb-3">
+            <a href="#" class="social-icon me-2"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon me-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon me-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/labonno6059/" target="_blank" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="mb-2">&copy; <span id="currentYear"></span> Labonno Roy — Crafted with <i class="fas fa-heart text-danger"></i> using Bootstrap 5 & JavaScript</p>
+        <small class="opacity-75">🚀 Available for freelance & collaborations — Let's build something amazing!</small>
+    </div>
+</footer>
+
+<!-- Professional Notification Modal (added for contact form) -->
+<div class="modal fade notification-modal" id="notificationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="notification-icon" id="notificationIcon"><i class="fas fa-check-circle"></i></div>
+                <h4 id="notificationTitle" class="fw-bold">Success</h4>
+                <p id="notificationMessage" class="text-muted">Your message has been sent successfully!</p>
+                <button class="btn btn-custom mt-3" data-bs-dismiss="modal">Got it</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    (function() {
+        // Dynamic role
+        const roles = ["Creative Developer", "UI/UX Enthusiast", "Bootstrap Expert", "Front-end Architect"];
+        let idx = 0;
+        const roleEl = document.getElementById('dynamic-role');
+        if (roleEl) setInterval(() => { idx = (idx + 1) % roles.length; roleEl.textContent = roles[idx]; }, 2200);
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+        // Navbar scroll
+        const navbar = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => { if (window.scrollY > 60) navbar.classList.add('scrolled'); else navbar.classList.remove('scrolled'); });
+        
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const target = document.querySelector(targetId);
+                    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+                }
+            });
+        });
+
+        // ----- INSIGHTFLOW CHART -----
+        let chart;
+        function initChart() {
+            const ctx = document.getElementById('revenueChart')?.getContext('2d');
+            if (!ctx) return;
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: { labels: ['Week1', 'Week2', 'Week3', 'Week4'], datasets: [{ label: 'Revenue ($)', data: [4200, 5800, 7100, 4900], backgroundColor: '#8B5CF6' }] },
+                options: { responsive: true }
+            });
+            updateStats([4200, 5800, 7100, 4900]);
+        }
+        function updateStats(data) { let total = data.reduce((a,b)=>a+b,0); document.getElementById('totalViews').innerText = total.toLocaleString(); document.getElementById('conversionRate').innerText = Math.floor(total/200)+'%'; }
+        function updateChartByMonth(month) {
+            const dataset = { Jan: [3200,4500,6200,5100], Feb: [4100,5300,6900,5800], Mar: [4200,5800,7100,4900], Apr: [5000,6700,8200,7100] };
+            let newData = dataset[month] || [4200,5800,7100,4900];
+            chart.data.datasets[0].data = newData; chart.update(); updateStats(newData);
+        }
+        const monthFilter = document.getElementById('monthFilter');
+        const updateBtn = document.getElementById('updateChartBtn');
+        if (updateBtn && monthFilter) updateBtn.addEventListener('click', () => updateChartByMonth(monthFilter.value));
+        if (document.getElementById('revenueChart')) initChart();
+
+        // ----- WEATHERWISE (mock) -----
+        const getWeather = document.getElementById('getWeatherBtn');
+        const cityInput = document.getElementById('cityInput');
+        const citySpan = document.getElementById('cityName');
+        const tempSpan = document.getElementById('temperature');
+        const descSpan = document.getElementById('description');
+        const weatherIcon = document.getElementById('weatherIcon');
+        function fetchMockWeather(city) {
+            const mock = { 'dhaka': { temp: 29, desc: 'Partly cloudy', icon: 'fa-cloud-sun' }, 'london': { temp: 15, desc: 'Light rain', icon: 'fa-cloud-rain' }, 'new york': { temp: 22, desc: 'Clear sky', icon: 'fa-sun' }, 'tokyo': { temp: 18, desc: 'Overcast', icon: 'fa-cloud' } };
+            let key = city.toLowerCase();
+            return mock[key] || { temp: 24, desc: 'Sunny with clouds', icon: 'fa-cloud-sun' };
+        }
+        function updateWeather(city) {
+            let data = fetchMockWeather(city);
+            citySpan.innerText = city;
+            tempSpan.innerText = data.temp + ' °C';
+            descSpan.innerText = data.desc;
+            weatherIcon.className = `fas ${data.icon} fa-3x`;
+        }
+        if (getWeather) {
+            getWeather.addEventListener('click', () => { let city = cityInput.value.trim(); if (city) updateWeather(city); else updateWeather('Dhaka'); });
+            updateWeather('Dhaka');
+        }
+
+        // ----- MODACART (LocalStorage) -----
+        const products = [
+            { id: 1, name: 'Wireless Headphones', price: 49.99, img: '🎧' },
+            { id: 2, name: 'Smart Watch', price: 89.99, img: '⌚' },
+            { id: 3, name: 'Minimal Backpack', price: 39.99, img: '🎒' },
+            { id: 4, name: 'Bluetooth Speaker', price: 59.99, img: '🔊' }
+        ];
+        let cart = JSON.parse(localStorage.getItem('modaCart')) || [];
+        function saveCart() { localStorage.setItem('modaCart', JSON.stringify(cart)); renderCart(); renderProductList(); }
+        function addToCart(product) {
+            let existing = cart.find(i => i.id === product.id);
+            if (existing) existing.qty += 1;
+            else cart.push({ ...product, qty: 1 });
+            saveCart();
+        }
+        function removeItem(id) { cart = cart.filter(i => i.id !== id); saveCart(); }
+        function updateQuantity(id, delta) {
+            let item = cart.find(i => i.id === id);
+            if (item) { item.qty += delta; if (item.qty <= 0) removeItem(id); else saveCart(); }
+        }
+        function renderCart() {
+            const container = document.getElementById('cartItemsContainer');
+            const totalSpan = document.getElementById('cartTotal');
+            const countSpan = document.getElementById('cartCount');
+            if (!container) return;
+            if (cart.length === 0) { container.innerHTML = '<p class="text-muted">Cart is empty</p>'; totalSpan.innerText = '0.00'; countSpan.innerText = '0'; return; }
+            let html = '', total = 0, count = 0;
+            cart.forEach(item => { let subtotal = item.price * item.qty; total += subtotal; count += item.qty;
+                html += `<div class="cart-item"><div><strong>${item.name}</strong><br><small>$${item.price} x ${item.qty}</small></div><div><button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity(${item.id},-1)">-</button> <span class="mx-1">${item.qty}</span> <button class="btn btn-sm btn-outline-secondary" onclick="updateQuantity(${item.id},1)">+</button> <button class="btn btn-sm btn-danger ms-2" onclick="removeItem(${item.id})">🗑️</button></div></div>`;
+            });
+            container.innerHTML = html;
+            totalSpan.innerText = total.toFixed(2);
+            countSpan.innerText = count;
+        }
+        function renderProductList() {
+            const prodContainer = document.getElementById('productList');
+            if (!prodContainer) return;
+            let html = '';
+            products.forEach(p => {
+                html += `<div class="col-6"><div class="border rounded p-2 text-center"><div style="font-size:2rem;">${p.img}</div><h6>${p.name}</h6><p class="fw-bold">$${p.price}</p><button class="btn btn-sm btn-custom" onclick="addToCart({id:${p.id}, name:'${p.name}', price:${p.price}, img:'${p.img}'})"><i class="fas fa-cart-plus"></i> Add</button></div></div>`;
+            });
+            prodContainer.innerHTML = html;
+        }
+        window.addToCart = addToCart; window.removeItem = removeItem; window.updateQuantity = updateQuantity;
+        if (document.getElementById('productList')) { renderProductList(); renderCart(); }
+        const clearBtn = document.getElementById('clearCartBtn');
+        if (clearBtn) clearBtn.addEventListener('click', () => { cart = []; saveCart(); });
+
+        // ----- Professional Notification Function (replaces alert) -----
+        const notificationModal = new bootstrap.Modal(document.getElementById('notificationModal'));
+        function showNotification(title, message, type = 'success') {
+            const iconEl = document.getElementById('notificationIcon');
+            const titleEl = document.getElementById('notificationTitle');
+            const msgEl = document.getElementById('notificationMessage');
+            
+            // Reset and set icon & style
+            iconEl.className = 'notification-icon';
+            if (type === 'success') {
+                iconEl.innerHTML = '<i class="fas fa-check-circle"></i>';
+                iconEl.classList.add('success');
+                titleEl.innerText = title || 'Success!';
+            } else if (type === 'error') {
+                iconEl.innerHTML = '<i class="fas fa-exclamation-circle"></i>';
+                iconEl.classList.add('error');
+                titleEl.innerText = title || 'Oops!';
+            } else if (type === 'warning') {
+                iconEl.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                iconEl.classList.add('warning');
+                titleEl.innerText = title || 'Attention';
+            }
+            msgEl.innerText = message;
+            notificationModal.show();
+        }
+
+        // Contact form with professional modal
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('nameInput').value.trim();
+                const email = document.getElementById('emailInput').value.trim();
+                const msg = document.getElementById('msgInput').value.trim();
+                
+                if (!name || !email || !msg) {
+                    showNotification('Missing Information', 'Please fill in all fields before sending.', 'warning');
+                    return;
+                }
+                if (!email.includes('@') || !email.includes('.')) {
+                    showNotification('Invalid Email', 'Please enter a valid email address (e.g., name@example.com).', 'error');
+                    return;
+                }
+                // Success case
+                showNotification('Message Sent!', `Thanks ${name}! Your message has been received. I'll get back to you within 24 hours.`, 'success');
+                contactForm.reset();
+            });
+        }
+    })();
+</script>
+</body>
+</html>
